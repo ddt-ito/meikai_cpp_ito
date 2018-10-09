@@ -1,21 +1,21 @@
-/* 
-‰‰K1|1 ƒwƒbƒ_<iostream>‚ðƒCƒ“ƒNƒ‹[ƒh‚·‚éŽw—ß‚ªŒ‡”@‚µ‚Ä‚¢‚é‚ÆA‚Ç‚¤‚È‚é‚Å‚ ‚ë‚¤‚©B
-ƒvƒƒOƒ‰ƒ€‚ðƒRƒ“ƒpƒCƒ‹‚µ‚ÄŒŸØ‚¹‚æB
+ï»¿/* 
+æ¼”ç¿’1ï¼1 ãƒ˜ãƒƒãƒ€<iostream>ã‚’ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã™ã‚‹æŒ‡ä»¤ãŒæ¬ å¦‚ã—ã¦ã„ã‚‹ã¨ã€ã©ã†ãªã‚‹ã§ã‚ã‚ã†ã‹ã€‚
+ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã—ã¦æ¤œè¨¼ã›ã‚ˆã€‚
 */
 
-// ƒwƒbƒ_‚Ì“à—e‚ðƒCƒ“ƒNƒ‹[ƒh
+// ãƒ˜ãƒƒãƒ€ã®å†…å®¹ã‚’ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰
 #include <iostream> 
 
-// –¼‘O‹óŠÔ‚Ì—˜—p
+// åå‰ç©ºé–“ã®åˆ©ç”¨
 using namespace std; 
 
-// mainŠÖ”iˆÈ‰º‚Ì•¶‚ðŽÀsj
+// mainé–¢æ•°ï¼ˆä»¥ä¸‹ã®æ–‡ã‚’å®Ÿè¡Œï¼‰
 int main() 
 {
-    // •¶Žš‚Ìo—Í
-    cout << "‰‚ß‚Ä‚ÌC++ƒvƒƒOƒ‰ƒ€B \n";
-    // •¶Žš‚Ìo—Í
-    cout << "‰æ–Ê‚Éo—Í‚µ‚Ä‚¢‚Ü‚·B\n";
+    // æ–‡å­—ã®å‡ºåŠ›
+    cout << "åˆã‚ã¦ã®C++ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã€‚ \n";
+    // æ–‡å­—ã®å‡ºåŠ›
+    cout << "ç”»é¢ã«å‡ºåŠ›ã—ã¦ã„ã¾ã™ã€‚\n";
 }
 
-// ƒCƒ“ƒNƒ‹[ƒhŽw—ßAƒwƒbƒ_‚ªŒ‡”@‚·‚é‚ÆƒRƒ“ƒpƒCƒ‹ƒGƒ‰[‚ª‹N‚±‚é
+// ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰æŒ‡ä»¤ã€ãƒ˜ãƒƒãƒ€ãŒæ¬ å¦‚ã™ã‚‹ã¨ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã‚¨ãƒ©ãƒ¼ãŒèµ·ã“ã‚‹
