@@ -3,29 +3,25 @@
 好きなだけ何度でも入力・表示を繰り返せるようにしたプログラムを作成せよ。
 */
 
-// 文字列を扱うためのインクルード
-#include <string>
-
-// 入出力のためのインクルード
-#include <iostream>
+// ライブラリのインクルード
+#include <string>	// 文字列
+#include <iostream>	// 入出力
 
 // 名前空間の利用
 using namespace std;
 
 // メイン関数（以下の文章を実行。）
 int main()
-
 {
-	// 文字の宣言
+	// 以下のdo{}を繰り返すかどうかを問う際に用いる文字列を宣言
 	string retryProgram;
 
-	// 以下の文章をwhile()の間、実行
+	// while()をを満たしている間、以下do{}を実行
 	do {
-
 		// 整数の宣言
 		int integerNumber;
 
-		// 文字の出力
+		// 整数値を出力
 		cout << "整数値 : ";
 
 		// 入力から受け取った数値を代入
@@ -49,12 +45,11 @@ int main()
 			// ゼロである旨の文章の出力
 			cout << "その値はゼロです。\n";
 		}
-		// 文字の出力
+		// 繰り返すかどうかを問う旨の文章の出力
 		cout << "もう一度？ Y…Yes / N…No : ";
 
 		// 文字を受け取る
 		cin >> retryProgram;
-	}
-	// do｛｝を実行する条件
-	while (retryProgram == "Y" || retryProgram == "y");
-}
+
+	// "Y"もしくは"y"を入力した場合にdo｛｝を実行する
+	} while (retryProgram == "Y" || retryProgram == "y");}
