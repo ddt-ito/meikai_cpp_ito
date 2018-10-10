@@ -13,12 +13,12 @@ using namespace std;
 // メイン関数（以下の文章を実行。）
 int main()
 {
-	// 以下のdo{}を繰り返すかどうかを問う際に用いる文字列を宣言
+	// 以下のdo{}を繰り返すかどうかを問う際に用いる文字列を宣言…※1
 	string retryProgram;
 
-	// while()をを満たしている間、以下do{}を実行
+	// while()を満たしている間、以下do{}を実行
 	do {
-		// 整数の宣言
+		// 符号を判定する整数の宣言
 		int integerNumber;
 
 		// 整数値を出力
@@ -48,8 +48,9 @@ int main()
 		// 繰り返すかどうかを問う旨の文章の出力
 		cout << "もう一度？ Y…Yes / N…No : ";
 
-		// 文字を受け取る
+		// 文字を受け取って※1に代入
 		cin >> retryProgram;
 
-	// "Y"もしくは"y"を入力した場合にdo｛｝を実行する
-	} while (retryProgram == "Y" || retryProgram == "y");}
+		// "Y"もしくは"y"を入力した場合にdo｛｝を実行する
+	} while (retryProgram == "Y" || retryProgram == "y");
+}
