@@ -12,7 +12,6 @@ using namespace std;
 
 // メイン関数（以下の文章を実行。）
 int main() {
-
 	// 整数x,整数yの宣言
 	int integerNumberX;	// 整数x
 	int integerNumberY;	// 整数y
@@ -20,35 +19,38 @@ int main() {
 	// 文字の出力
 	cout << "整数x : \n";
 
-	// 数を受け取って代入
+	// 数を受け取ってxに代入
 	cin >> integerNumberX;
 
 	// 文字の出力
 	cout << "整数y : \n";
 
-	// 数を受け取って代入
+	// 数を受け取ってyに代入
 	cin >> integerNumberY;
 
-	// y > xの場合には、x > yのようにする。
+	/*
+	y > xの場合、それぞれに代入された値を交換し、
+	x > yのようにする。
+	*/
 	if (integerNumberY > integerNumberX) {
 
-		// 仮の入れ物の宣言、xの数で初期化
+		// 仮の入れ物の宣言、xの値で初期化
 		int temporaryNumber = integerNumberY;
 
-		// xの数をyに代入
+		// xの値をyに代入
 		integerNumberY = integerNumberX;
 
-		// 仮の入れ物の数をxに代入
+		// 仮の入れ物の値をxに代入
 		integerNumberX = temporaryNumber;
 	}
-	// 以下を実行
+	// while()を満たしている間、do{}を実行
 	do {
 		// 数字の出力
 		cout << integerNumberY << " ";
 
-		// yに1を足した数をyに代入
+		// yに1を足した値をyに代入
 		integerNumberY = integerNumberY + 1;
 
-		// ()内である限りdo{}を繰り返す
+	// do{}を繰り返す条件（y <= xである間）
 	} while (integerNumberY <= integerNumberX);
 }
