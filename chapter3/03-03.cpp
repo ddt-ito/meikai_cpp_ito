@@ -16,13 +16,13 @@ int main() {
 	int integerNumberX;	// 整数x
 	int integerNumberY;	// 整数y
 
-	// 文字の出力
+	// xの値を出力
 	cout << "整数x : \n";
 
 	// 数を受け取ってxに代入
 	cin >> integerNumberX;
 
-	// 文字の出力
+	// yの値を出力
 	cout << "整数y : \n";
 
 	// 数を受け取ってyに代入
@@ -34,18 +34,18 @@ int main() {
 	*/
 	if (integerNumberY > integerNumberX) {
 
-		// 仮の入れ物の宣言、xの値で初期化
+		// 仮の入れ物の宣言、yに代入されていた値で初期化
 		int temporaryNumber = integerNumberY;
 
-		// xの値をyに代入
+		// xに代入されていた値をyに代入
 		integerNumberY = integerNumberX;
 
-		// 仮の入れ物の値をxに代入
+		// 仮の入れ物に代入されていた値をxに代入
 		integerNumberX = temporaryNumber;
 	}
 	// while()を満たしている間、do{}を実行
 	do {
-		// 数字の出力
+		// yの値を出力
 		cout << integerNumberY << " ";
 
 		// yに1を足した値をyに代入
