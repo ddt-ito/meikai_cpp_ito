@@ -34,16 +34,16 @@ int main() {
 	*/
 	if (integerNumberY > integerNumberX) {
 
-		// 仮の入れ物の宣言、yに代入されていた値で初期化
+		// 仮の入れ物の宣言、yの値で初期化
 		int temporaryNumber = integerNumberY;
 
-		// xに代入されていた値をyに代入
+		// xの値をyに代入
 		integerNumberY = integerNumberX;
 
-		// 仮の入れ物に代入されていた値をxに代入
+		// 仮の入れ物の値をxに代入
 		integerNumberX = temporaryNumber;
 	}
-	// while()を満たしている間、do{}を実行
+	// while()内の条件を満たしている間、{}内を1回以上実行
 	do {
 		// yの値を出力
 		cout << integerNumberY << " ";
