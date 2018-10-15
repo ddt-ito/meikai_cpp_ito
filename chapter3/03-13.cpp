@@ -17,7 +17,7 @@ int main() {
 	// 身長の数値を格納するための変数を宣言
 	int lowerNumber;	// 開始値
 	int upperNumber;	// 終了値
-	int integerNumber;	// 増分
+	int intervalNumber;	// 増分
 
 	// 文章の出力
 	cout << "何cmから : ";
@@ -26,7 +26,7 @@ int main() {
 	cin >> lowerNumber;
 
 	// 文章の出力
-	cout << "何cmから : ";
+	cout << "何cmまで : ";
 
 	// 入力から値を受け取って変数に代入
 	cin >> upperNumber;
@@ -35,18 +35,15 @@ int main() {
 	cout << "何cmごと : ";
 
 	// 入力から値を受け取って変数に代入
-	cin >> integerNumber;
+	cin >> intervalNumber;
 
 	// 文章の出力
 	cout << "身長　標準体重\n";
 
 	// 身長の値から標準体重を出力
-	for ( ; lowerNumber <= upperNumber; lowerNumber + integerNumber) {
+	for (int countNumber = lowerNumber; countNumber <= upperNumber; countNumber += intervalNumber) {
 		
 		// 身長の値とその値から算出した標準体重の値を出力
-		cout << lowerNumber << "   " << (lowerNumber - 100) * 0.9 << "\n";
-
-		// lowerNumberが終了値を超えるまでの間、integerNumberの値を加える
-		lowerNumber += integerNumber;
+		cout << countNumber << "   " << (countNumber - 100) * 0.9 << "\n";
 	}
 }
