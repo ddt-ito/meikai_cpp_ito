@@ -29,9 +29,9 @@ int main() {
 	} while (integerNumber <= 0);
 
 	// 0から入力値まで、大きい順に出力する
-	for (; integerNumber >= 0; integerNumber--) {
+	for (int countNumber = integerNumber; countNumber >= 0; countNumber--) {
 
 		// 入力値を出力する
-		cout << integerNumber << "\n";
+		cout << countNumber << "\n";
 	}
 }
