@@ -20,7 +20,7 @@ int main() {
 	// while()の条件を満たしている間、{}内を実行
 	do {
 		// 入力値の出力
-		cout << "nまでの値 : ";
+		cout << "nの値 : ";
 
 		// 入力から数値を受け取って変数nに代入
 		cin >> integerNumber;
@@ -38,5 +38,5 @@ int main() {
 		sumNumber += countNumber;
 	}
 	// 1からnまでの和を出力
-	cout << "1から" << "n" << "までの和は" << sumNumber << "です。\n";
+	cout << "1から" << integerNumber << "までの和は" << sumNumber << "です。\n";
 }
