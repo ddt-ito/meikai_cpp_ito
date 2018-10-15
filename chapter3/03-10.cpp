@@ -32,9 +32,6 @@ int main() {
 	for (int countNumber = 0; countNumber <= integerNumber; countNumber++) {
 
 		// 数値の出力
-		cout << countNumber;
-
-		// 改行文字の出力
-		cout << "\n";
+		cout << countNumber << '\n';
 	}
 }
