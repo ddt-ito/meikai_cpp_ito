@@ -35,22 +35,23 @@ int main() {
 	int sumNumber = 0;
 
 	// 1からnまでの和を求める
-	for (int countNumber = 1; countNumber <= integerNumber; ) {
+	for (int countNumber = 1; countNumber <= integerNumber; countNumber++) {
 
 		// countNumberがnよりも小さい間、{}内を実行
-		for (; countNumber < integerNumber; countNumber++) {
+		if (countNumber < integerNumber) {
 
 			// countNumberの出力
 			cout << countNumber;
 
 			// 記号の出力
 			cout << " + ";
-			
+
 			// 現時点の和にcountNumberの数値を足す
 			sumNumber += countNumber;
-		}
-		// countNumberがnと同じ値になったとき{}内を実行
-		for ( ; countNumber == integerNumber; countNumber++){
+
+			// countNumberがnの値と等しいとき{}内を実行
+			// （countNumber >= integerNumber, かつ for文条件countNumber <= integerNumberを満たすとき）
+		}else {
 
 			// 現時点の和にcountNumberの数値を足す
 			sumNumber += countNumber;
