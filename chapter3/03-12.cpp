@@ -22,7 +22,7 @@ int main() {
 
 	// while()の条件を満たしている間、{}内を実行
 	do {
-		// 入力値の出力
+		// 文章の出力
 		cout << "nまでの値 : ";
 
 		// 入力から数値を受け取って代入
@@ -37,25 +37,18 @@ int main() {
 	// 1からnまでの和を求める
 	for (int countNumber = 1; countNumber <= integerNumber; countNumber++) {
 
+		// 現時点の和にcountNumberの数値を足す
+		sumNumber += countNumber;
+
 		// countNumberがnよりも小さい間、{}内を実行
 		if (countNumber < integerNumber) {
+			
+			// countNumber、記号の出力
+			cout << countNumber << '+';
 
-			// countNumberの出力
-			cout << countNumber;
-
-			// 記号の出力
-			cout << " + ";
-
-			// 現時点の和にcountNumberの数値を足す
-			sumNumber += countNumber;
-
-			// countNumberがnの値と等しいとき{}内を実行
-			// （countNumber >= integerNumber, かつ for文条件countNumber <= integerNumberを満たすとき）
+		// countNumberがnの値と等しいとき{}内を実行
+		// （countNumber >= integerNumber, かつ for文条件countNumber <= integerNumberを満たすとき）
 		}else {
-
-			// 現時点の和にcountNumberの数値を足す
-			sumNumber += countNumber;
-
 			// 等号と1からnの和を出力（countNumber == nのため）
 			cout << countNumber << " = " << sumNumber;
 		}
