@@ -27,16 +27,17 @@ int main() {
 	// 入力から受け取った数値を変数に代入
 	cin >> areaLength;
 
-	// 三角形をつくるための記号の出力、縦方向にループ。
-	for (int rowNumber = 1; rowNumber <= areaLength; rowNumber++) {
+	// 三角形をつくるための記号の出力、縦方向にループ
+	for (int rowNumber = 0; rowNumber < areaLength; rowNumber++) {
 
-		// 三角形をつくるための記号の出力、横方向にループ。
-		for (int columnNumber = rowNumber; columnNumber <= areaLength; columnNumber++) {
+		// 三角形をつくるための記号の出力、横方向にループ
+		// 段が下がるにつれて出力するアスタリスクの数を減らす
+		for (int columnNumber = 0; columnNumber < areaLength - rowNumber ; columnNumber++) {
 
 			// 記号を出力
 			cout << '*';
 		}
-		// 改行文字を出力（columnNumberの値がareaLengthの値と等しくなるまでループした後、改行）
+		// (areaLength - rowNumber)の数だけアスタリスクを出力した後、改行
 		cout << '\n';
 	}
 }
