@@ -16,20 +16,19 @@ int main() {
 	for (int lineNumber = 1; lineNumber <= 9; lineNumber++) {
 
 		// 9列目まで数の出力を横方向に繰り返す
-		for (int rowNumber = 1; rowNumber <= 9; rowNumber++) {
+		for (int columnNumber = 1; columnNumber <= 9; columnNumber++) {
 
 			// 積の桁数が1桁である時
-			if (lineNumber * rowNumber <= 9) {
+			if (lineNumber * columnNumber <= 9) {
 
 				// 半角文字2文字分の空白を出力
-				cout << "  " << lineNumber * rowNumber;
+				cout << "  " << lineNumber * columnNumber;
 			}
 			// （九九の表において積は1桁の場合と2桁の場合の2通りしかないため、
 			// ここでelseを用いることができる）
 			else {
-
 				// 半角文字1文字分の空白を出力
-				cout << " " << lineNumber * rowNumber;
+				cout << ' ' << lineNumber * columnNumber;
 			}
 		}
 		// 改行文字の出力（横方向に9列目まで数値が出力されている時）
