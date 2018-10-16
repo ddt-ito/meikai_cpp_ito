@@ -44,6 +44,6 @@ int main() {
 	for (int countNumber = lowerNumber; countNumber <= upperNumber; countNumber += intervalNumber) {
 		
 		// 身長の値とその値から算出した標準体重の値を出力
-		cout << countNumber << "   " << (countNumber - 100) * 0.9 << "\n";
+		cout << countNumber << "   " << (countNumber - 100) * 0.9 << '\n';
 	}
 }
