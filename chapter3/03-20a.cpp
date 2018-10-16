@@ -16,7 +16,7 @@ using namespace std;
 int main() {
 
 	// 一辺の長さの数値を格納するための変数を宣言
-	int areaNumber;
+	int areaLength;
 
 	// 文章を出力
 	cout << "左上直角の三角形を表示します。\n";
@@ -25,18 +25,18 @@ int main() {
 	cout << "段数は : ";
 
 	// 入力から受け取った数値を変数に代入
-	cin >> areaNumber;
+	cin >> areaLength;
 
-	// 三角形をつくるための記号の出力、縦方向にループ
-	for (int lineNumber = 0; lineNumber <= areaNumber - 1; lineNumber++) {
+	// 三角形をつくるための記号の出力、縦方向にループ。
+	for (int rowNumber = 1; rowNumber <= areaLength; rowNumber++) {
 
-		// 三角形をつくるための記号の出力、横方向にループ
-		for (int columnNumber = areaNumber; columnNumber - lineNumber >= 1; columnNumber--) {
+		// 三角形をつくるための記号の出力、横方向にループ。
+		for (int columnNumber = rowNumber; columnNumber <= areaLength; columnNumber++) {
 
 			// 記号を出力
 			cout << '*';
 		}
-		// 改行文字を出力（lineNumberの値の数だけ記号を横方向に出力した時）
+		// 改行文字を出力（columnNumberの値がareaLengthの値と等しくなるまでループした後、改行）
 		cout << '\n';
 	}
 }
