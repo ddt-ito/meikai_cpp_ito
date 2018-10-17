@@ -27,16 +27,20 @@ int main() {
 	// ピラミッドをつくるため記号の出力、縦方向にループ
 	for (int rowNumber = 1; rowNumber <= heightLength; rowNumber++) {
 
-		// ピラミッド左側の空白を出力、横方向にループ
-		for (int columnNumber = rowNumber; columnNumber <= heightLength - 1; columnNumber++) {
+		// ピラミッド左側に左上直角の三角形を空白で出力
+		// 1行中に出力される数は入力値 - rowNumberであるから、
+		// 初期化文内の変数の値がその値に等しくなるまで出力を繰り返す
+		for (int spaceNumber = 1; spaceNumber <= heightLength - rowNumber; spaceNumber++) {
 
 			// 空白を出力
 			cout << ' ';
 		}
-		// ピラミッドをつくるための記号の出力、横方向のループ
+		// ピラミッドをつくるための記号の出力
 		// 初期化文にて出力するアスタリスクの残数を格納するための変数を宣言、初期化
+		// 0になるまで出力を繰り返す
 		for (int asteriskNumber = (rowNumber - 1) * 2 + 1;
-			asteriskNumber > 0 ; asteriskNumber--){
+			asteriskNumber > 0 ;
+			asteriskNumber--){
 
 			// アスタリスクを出力
 			cout << '*';
