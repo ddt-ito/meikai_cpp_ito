@@ -27,14 +27,15 @@ int main() {
 	for (int rowNumber = 1; rowNumber <= heightNumber; rowNumber++) {
 
 		// ピラミッド左側の空白を出力、横方向にループ
-		for (int columnNumber = 1; columnNumber <= rowNumber; columnNumber++) {
+		for (int columnNumber = 1; columnNumber < rowNumber; columnNumber++) {
 
 			// 空白を出力
 			cout << ' ';
 		}
-		// ピラミッドを形作るための数字を出力、横方向にループ
+		// ピラミッドを形作るための数字を出力
 		// 初期化文にて出力する数字の残数を格納するための変数を宣言、初期化
-		for (int restOfAsterisk = (heightNumber - rowNumber) * 2 + 1; restOfAsterisk > 0 ; restOfAsterisk--) {
+		// 数字をひとつ出力したら変数の値を1ずつ減らす処理を、値が0になるまで横方向に繰り返す
+		for (int reminderNumbers = (heightNumber - rowNumber) * 2 + 1; reminderNumbers > 0 ; reminderNumbers--) {
 
 			// 数字（rowNumberを10で割ったときの剰余）を出力
 			cout << rowNumber % 10;
