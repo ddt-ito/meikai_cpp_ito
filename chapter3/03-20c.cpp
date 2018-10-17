@@ -27,19 +27,17 @@ int main() {
 	// 入力から受け取った数値を変数に代入
 	cin >> areaLength;
 
-	// 三角形をつくるためアスタリスク、空白を出力を繰り返す
-	// 文の初回実行時、変数の値は0である
-	for (int rowNumber = 0; rowNumber < areaLength; rowNumber++) {
+	// 三角形をつくるためアスタリスク、空白の出力を繰り返す
+	for (int rowNumber = 1; rowNumber <= areaLength; rowNumber++) {
 
-		// 三角形の左側部分を空白で出力、横方向のループ
-		// 一辺の長さは(arealength - 1)となる
-		for (int columnNumber = 0; columnNumber < rowNumber; columnNumber++) {
+		// 三角形の左側部分に空白で左上直角の三角形を出力、横方向のループ
+		for (int columnNumber = 1; columnNumber < rowNumber; columnNumber++) {
 
 			// 空白を出力
 			cout << ' ';
 		}
 		// 三角形をつくるアスタリスクの出力、横方向のループ
-		for (int columnNumber = 0; columnNumber < areaLength - rowNumber; columnNumber++) {
+		for (int columnNumber = rowNumber; columnNumber <= areaLength; columnNumber++) {
 
 			// アスタリスクの出力
 			cout << '*';
