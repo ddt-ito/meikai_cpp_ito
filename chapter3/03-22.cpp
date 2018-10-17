@@ -32,10 +32,8 @@ int main() {
 			// 空白を出力
 			cout << ' ';
 		}
-		// ピラミッドを形作るための数字を出力
-		// 初期化文にて出力する数字の残数を格納するための変数を宣言、初期化
-		// 数字をひとつ出力したら変数の値を1ずつ減らす処理を、値が0になるまで横方向に繰り返す
-		for (int reminderNumbers = (heightNumber - rowNumber) * 2 + 1; reminderNumbers > 0 ; reminderNumbers--) {
+		// 出力する数字の個数（段数の値と現在の行の位置との関係から表現）だけ出力をループ
+		for (int remainderNumbers = (heightNumber - rowNumber) * 2 + 1; remainderNumbers > 0 ; remainderNumbers--) {
 
 			// 数字（rowNumberを10で割ったときの剰余）を出力
 			cout << rowNumber % 10;
