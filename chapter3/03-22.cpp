@@ -20,23 +20,24 @@ int main() {
 		// 入力から受け取った数を変数に代入
 		cin >> heightNumber;
 
-	// do{}が繰り返される条件（正の整数が入力されるまで）
+	// do{}が繰り返される条件（2以上でなければピラミッドができない）
 	} while (heightNumber < 1);
 
 	// ピラミッドをつくるための記号の出力、縦方向にループ
-	for (int lineNumber = 1; lineNumber <= heightNumber; lineNumber++) {
+	for (int rowNumber = 1; rowNumber <= heightNumber; rowNumber++) {
 
 		// ピラミッド左側の空白を出力、横方向にループ
-		for (int columnNumber = 1; columnNumber <= lineNumber; columnNumber++) {
+		for (int columnNumber = 1; columnNumber <= rowNumber; columnNumber++) {
 
 			// 空白を出力
 			cout << ' ';
 		}
 		// ピラミッドを形作るための数字を出力、横方向にループ
-		for (int columnNumber = 1; columnNumber <= (heightNumber - lineNumber) * 2 + 1; columnNumber++) {
+		// 初期化文にて出力する数字の残数を格納するための変数を宣言、初期化
+		for (int restOfAsterisk = (heightNumber - rowNumber) * 2 + 1; restOfAsterisk > 0 ; restOfAsterisk--) {
 
-			// lineNumberを10で割ったときの剰余を1列ごとに出力
-			cout << lineNumber % 10;
+			// 数字（rowNumberを10で割ったときの剰余）を出力
+			cout << rowNumber % 10;
 		}
 		// 改行文字を出力
 		cout << '\n';
