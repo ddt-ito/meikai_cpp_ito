@@ -14,29 +14,31 @@ using namespace std;
 int main() {
 
 	// 段数を格納するための変数を宣言
-	int heightNumber;
+	int heightLength;
 
 	// while()の条件を満たす間、{}を1回以上実行
 	do {
 		// 入力から受け取った数を変数に代入
-		cin >> heightNumber;
+		cin >> heightLength;
 	
-	// do{}が繰り返される条件（正の整数が入力されるまで）
-	} while (heightNumber < 1);
+	// do{}が繰り返される条件（段数1以下の場合ピラミッドができないため）
+	} while (heightLength < 1);
 
-	// ピラミッドをつくるための記号の出力、縦方向にループ
-	for (int lineNumber = 1; lineNumber <= heightNumber; lineNumber++) {
+	// ピラミッドをつくるため記号の出力、縦方向にループ
+	for (int rowNumber = 1; rowNumber <= heightLength; rowNumber++) {
 
 		// ピラミッド左側の空白を出力、横方向にループ
-		for (int columnNumber = lineNumber; columnNumber <= heightNumber - 1; columnNumber++) {
+		for (int columnNumber = rowNumber; columnNumber <= heightLength - 1; columnNumber++) {
 
 			// 空白を出力
 			cout << ' ';
 		}
-		// ピラミッド部分をアスタリスクで出力、横方向のループ
-		for (int asteriskNumber = 1;
-			asteriskNumber <= (lineNumber - 1) * 2 + 1; asteriskNumber++){
+		// ピラミッドをつくるための記号の出力、横方向のループ
+		// 初期化文にて出力するアスタリスクの残数を格納するための変数を宣言、初期化
+		for (int asteriskNumber = (rowNumber - 1) * 2 + 1;
+			asteriskNumber > 0 ; asteriskNumber--){
 
+			// アスタリスクを出力
 			cout << '*';
 		}
 		// 改行文字を出力
