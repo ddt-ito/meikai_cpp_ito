@@ -28,7 +28,7 @@ int main() {
 	cin >> numberOfTimes;
 
 	// 整数の合計値を格納するための変数を宣言
-	int sumNumber = 0;
+	double sumNumber = 0;
 
 	// 入力された回数だけ整数の加算を繰り返す
 	for (int countNumber = 1; countNumber <= numberOfTimes; countNumber++) {
@@ -42,6 +42,12 @@ int main() {
 		// 入力から受け取った数を格納するための変数を宣言
 		cin >> integerNumber;
 
+		// 入力値を現時点の合計値に加算する
+		sumNumber += integerNumber;
+
+		// 平均値を格納するための変数を宣言、平均値を求めてその値で初期化
+		double averageNumber = sumNumber / countNumber;
+
 		// for文の条件を満たさなくても、合計値が1000を超えた時点で繰り返しを抜ける
 		if (sumNumber + integerNumber > 1000) {
 
@@ -51,17 +57,11 @@ int main() {
 			// for文を抜ける
 			break;
 		}
-		// 入力値を現時点の合計値に加算する
-		sumNumber += integerNumber;
+		// 1回でも数が入力された場合には合計値、平均値を出力
+		if (countNumber >= 1) {
 
-		// 合計値の出力
-		cout << "合計は" << sumNumber << "です。\n";
-
-		// 整数の加算回数が2回以上の場合に平均値を求める
-		if (countNumber >= 2) {
-
-			// 平均値を格納するための変数を宣言、平均値を求めてその値で初期化
-			int averageNumber = sumNumber / countNumber;
+			// 合計値の出力
+			cout << "合計は" << sumNumber << "です。\n";
 
 			// 平均値の出力
 			cout << "平均は" << averageNumber << "です。\n";
