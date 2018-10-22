@@ -24,12 +24,11 @@ int main() {
 
 	// 変数の宣言
 	int inputNumber;			// 入力値を格納
-	int numberOfVictory = 1;	// 勝った回数を格納、1で初期化
-	int numberOfDefeat = 1;		// 負けた回数を格納、1で初期化
+	int numberOfVictory = 0;	// 勝った回数を格納、1で初期化
+	int numberOfDefeat = 0;		// 負けた回数を格納、1で初期化
 	
 	// 勝った回数、負けた回数どちらかが3回になるまで繰り返す
-	for( ; numberOfVictory <= 3 && numberOfDefeat <= 3; ){
-
+	do{
 		// コンピュータのジャンケンの手のパターンの値を格納するために
 		// 変数を宣言、0~2の乱数で初期化
 		int randomNumber = rand() % 3;
@@ -65,6 +64,10 @@ int main() {
 			cout << "パー\n";
 			// switch文を終了
 			break;
+		// どのラベルとも一致しない場合
+		default: 
+			// switch文を終了
+			break;
 		}
 		// 文章の出力
 		cout << "コンピューターが選んだ手 : ";
@@ -96,6 +99,10 @@ int main() {
 				numberOfDefeat++;
 				// switch文を終了
 				break;
+			// どのラベルとも一致しない場合
+			default:
+				// switch文を終了
+				break;
 			}
 		}
 		// チョキとなる値を入力した場合のジャンケンの勝敗の判定
@@ -121,6 +128,10 @@ int main() {
 				cout << "パー、であなたの勝ち。\n";
 				// 勝った回数をインクリメント
 				numberOfVictory++;
+				// switch文を終了
+				break;
+			// どのラベルとも一致しない場合
+			default:
 				// switch文を終了
 				break;
 			}
@@ -152,7 +163,11 @@ int main() {
 				cout << "パー、であいこ。\n";
 				// あいこのときは勝敗の数をカウントせずにswitch文を終了
 				break;
+			// どのラベルとも一致しない場合
+			default:
+				// switch文を終了
+				break;
 			}
 		}
-	}
+	}while (numberOfVictory < 3 && numberOfDefeat < 3);
 }
