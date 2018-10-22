@@ -65,6 +65,10 @@ int main() {
 			cout << "パー\n";
 			// switch文を終了
 			break;
+		// どのラベルとも一致しない場合
+		default:
+			// switch文を終了
+			break;
 		}
 		// 文章の出力
 		cout << "コンピューターが選んだ手 : ";
@@ -92,6 +96,10 @@ int main() {
 				cout << "パー、であなたの負け。\n";
 				// switch文を終了
 				break;
+			// どのラベルとも一致しない場合
+			default:
+				// switch文を終了
+				break;
 			}
 		}
 		// チョキとなる値を入力した場合のジャンケンの勝敗の判定
@@ -113,6 +121,10 @@ int main() {
 			// パーの場合
 			case 2:
 				cout << "パー、であなたの勝ち。\n";
+				// switch文を終了
+				break;
+			// どのラベルとも一致しない場合
+			default:
 				// switch文を終了
 				break;
 			}
@@ -138,6 +150,10 @@ int main() {
 			case 2:
 				//文章の出力
 				cout << "パー、であいこ。\n";
+				// switch文を終了
+				break;
+			// どのラベルとも一致しない場合
+			default:
 				// switch文を終了
 				break;
 			}
