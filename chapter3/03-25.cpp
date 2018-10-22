@@ -32,6 +32,8 @@ int main() {
 	// 入力回数を格納するための変数を宣言、0で初期化
 	int countNumber = 0;
 
+	const int COUNT_LIMIT = 3;
+
 	// while()内の条件を満たす間、{}内を1回以上実行
 	do {
 		// 文章の出力
@@ -44,7 +46,7 @@ int main() {
 		countNumber++;
 
 		// while()の条件に拘わらず入力回数が制限回数に達したときにループを抜ける
-		if (countNumber == 3) {
+		if (countNumber == COUNT_LIMIT) {
 
 			// ループを抜ける
 			break;
