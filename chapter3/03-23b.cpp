@@ -49,7 +49,7 @@ int main() {
 		double averageNumber = sumNumber / countNumber;
 
 		// for文の条件を満たさなくても、合計値が1000を超えた時点で繰り返しを抜ける
-		if (sumNumber + integerNumber > 1000) {
+		if (sumNumber > 1000) {
 
 			// 文章の出力
 			cout << "\a合計が1000を超えました。\n最後の数値は無視します。\n";
