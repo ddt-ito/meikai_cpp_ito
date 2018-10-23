@@ -44,19 +44,18 @@ int main() {
 
 		// 入力から受け取った数を変数に代入
 		cin >> integerNumber;
-
-		// 入力値を現時点の合計値に加算する
-		sumNumber += integerNumber;
-
-		// 平均値を算出
-		averageNumber = sumNumber / countNumber;
-
+		
 		// 0を入力した時点で整数の加算を終了
 		if (integerNumber == 0) {
 
 			// for文から抜ける
 			break;
 		}
+		// 入力値を現時点の合計値に加算する
+		sumNumber += integerNumber;
+
+		// 平均値を算出
+		averageNumber = sumNumber / countNumber;
 	}
 	// 合計値の出力
 	cout << "合計は" << sumNumber << "です。\n";
