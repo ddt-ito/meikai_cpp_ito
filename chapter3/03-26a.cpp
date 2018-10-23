@@ -24,8 +24,8 @@ int main() {
 
 	// 変数の宣言
 	int inputNumber;			// 入力値を格納
-	int numberOfVictory = 0;	// 勝った回数を格納、1で初期化
-	int numberOfDefeat = 0;		// 負けた回数を格納、1で初期化
+	int numberOfVictory = 0;	// 勝った回数を格納、0で初期化
+	int numberOfDefeat = 0;		// 負けた回数を格納、0で初期化
 	
 	// 勝った回数、負けた回数どちらかが3回になるまで繰り返す
 	do{
