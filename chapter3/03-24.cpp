@@ -25,7 +25,7 @@ int main() {
 	cin >> numberOfTimes;
 
 	// 整数の合計値を格納するための変数を宣言、0で初期化
-	int sumNumber = 0;
+	double sumNumber = 0;
 
 	// 負の数が入力されたときの回数を格納するための変数
 	int invalidNumber = 0;
